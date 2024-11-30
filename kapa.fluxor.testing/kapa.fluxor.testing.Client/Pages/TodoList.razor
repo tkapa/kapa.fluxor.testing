@@ -1,0 +1,14 @@
+@inherits FluxorComponent
+@page "/TodoList"
+
+<Fluxor.Blazor.Web.StoreInitializer/>
+<h3>TodoList</h3>
+
+@if (TodoListState.Value == null) return;
+
+@foreach (var todo in TodoListState.Value.TodoListItems)
+{
+    <div>@todo.Title</div>
+}
+
+<button @onclick="@(_ => AddTodo("New Todo"))">Add Todo</button>

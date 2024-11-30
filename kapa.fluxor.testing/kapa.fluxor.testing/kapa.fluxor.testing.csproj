@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <AssemblyName>Kapa.Fluxor.Testing</AssemblyName>
+        <RootNamespace>Kapa.Fluxor.Testing</RootNamespace>
+        <PackageId>Kapa.Fluxor.Testing</PackageId>
+        <Authors>Kapa.Fluxor.Testing</Authors>
+        <Company>Kapa.Fluxor.Testing</Company>
+        <Product>Kapa.Fluxor.Testing</Product>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\kapa.fluxor.testing.Client\kapa.fluxor.testing.Client.csproj"/>
+        <PackageReference Include="Fluxor.Blazor.Web" Version="6.1.0" />
+        <PackageReference Include="Fluxor.Blazor.Web.ReduxDevTools" Version="6.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.0"/>
+    </ItemGroup>
+
+</Project>
