@@ -1,14 +1,15 @@
+@using Kapa.Fluxor.Testing.Client.Components.TodoList
 @inherits FluxorComponent
 @page "/TodoList"
 
 <Fluxor.Blazor.Web.StoreInitializer/>
 <h3>TodoList</h3>
 
+<CreateTodoListItem />
+
 @if (TodoListState.Value == null) return;
 
 @foreach (var todo in TodoListState.Value.TodoListItems)
 {
-    <div>@todo.Title</div>
+    <TodoListItemDisplay Item="@todo" />
 }
-
-<button @onclick="@(_ => AddTodo("New Todo"))">Add Todo</button>

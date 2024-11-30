@@ -9,7 +9,4 @@ public partial class TodoList : FluxorComponent
 {
     [Inject] public required IState<TodoListState> TodoListState { get; set; }
     [Inject] public required IDispatcher Dispatcher { get; set; }
-    
-    private void AddTodo(string todoName) =>
-        Dispatcher.Dispatch(new CreateTodoListItemAction(todoName, TodoListState.Value.TodoListItems.Count + 1));
 }
