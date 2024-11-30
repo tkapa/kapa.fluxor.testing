@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kapa.fluxor.testing", "kapa.fluxor.testing\kapa.fluxor.testing\kapa.fluxor.testing.csproj", "{0D55200E-7420-40A7-A24D-0AC780EADEC2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kapa.Fluxor.Testing", "kapa.fluxor.testing\kapa.fluxor.testing\Kapa.Fluxor.Testing.csproj", "{0D55200E-7420-40A7-A24D-0AC780EADEC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kapa.fluxor.testing.Client", "kapa.fluxor.testing\kapa.fluxor.testing.Client\kapa.fluxor.testing.Client.csproj", "{EA37AEED-A40C-4285-B449-AA6390A6960B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kapa.Fluxor.Testing.Client", "kapa.fluxor.testing\kapa.fluxor.testing.Client\Kapa.Fluxor.Testing.Client.csproj", "{EA37AEED-A40C-4285-B449-AA6390A6960B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
