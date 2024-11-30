@@ -15,11 +15,18 @@ public class TodoListState
     }
 }
 
-public record TodoListItem(Guid Id, string Title, int Order, TodoListItemStatus IsCompleted);
+public class TodoListItem(string title, int order)
+{
+    public string Title { get; set; } = title;
+    public int Order { get; set; } = order;
+    
+    public Guid Id { get; set; }
+    public TodoListItemStatus Status { get; set; }
+};
 
 public enum TodoListItemStatus
 {
-    Todo,
-    InProgress,
-    Done
+    Todo = 1,
+    InProgress = 2,
+    Done = 3
 }

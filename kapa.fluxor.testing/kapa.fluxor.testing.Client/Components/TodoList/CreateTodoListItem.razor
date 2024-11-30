@@ -1,0 +1,5 @@
+@inherits FluxorComponent;
+<div>
+    <input type="text" @bind="Title" />
+    <button @onclick="@(_ => AddTodo(Title))">Create</button>
+</div>

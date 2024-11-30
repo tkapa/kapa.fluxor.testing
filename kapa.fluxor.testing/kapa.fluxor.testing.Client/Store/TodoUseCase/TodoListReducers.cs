@@ -6,10 +6,14 @@ namespace Kapa.Fluxor.Testing.Store.TodoUseCase;
 public static class Reducers
 {
     [ReducerMethod]
-    public static TodoListState ReduceIncrementCounterAction(TodoListState state, CreateTodoListItemResultAction action)
+    public static TodoListState ReduceCreateTodoListItemAction(TodoListState state, CreateTodoListItemResultAction action)
     {
-        var currentItems = state.TodoListItems;
-        currentItems.Add(action.Item);
-        return new TodoListState(currentItems);
+        var newItems = state.TodoListItems;
+        newItems.Add(action.Item);
+        return new TodoListState(newItems);
     }
+
+    [ReducerMethod]
+    public static TodoListState ReduceSetTodoListItemsAction(TodoListState state, SetTodoListItemsAction action)
+        => new TodoListState(action.Items);
 }
